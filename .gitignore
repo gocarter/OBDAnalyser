@@ -63,6 +63,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+venv/
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -152,4 +154,3 @@ dmypy.json
 # End of https://www.gitignore.io/api/visualstudiocode,linux,git,python
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
