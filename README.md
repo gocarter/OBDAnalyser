@@ -2,14 +2,14 @@
 
 This is app/toolkit for parsing and analyzing data acquired by 'Car Scanner' android app.
 
-> I'm using this project to improve my skills in python, docker, and coding in general.
-> If you want to learn with me, please write to me at: <matciolkosz@gmail.com>
+I'm using this project to improve my skills in python, docker, and coding in general.
+If you want to learn with me, please write to me at: <matciolkosz@gmail.com>
 
-> ## Getting Started
->
-> These instructions will get you a copy of the project up and running on your local machine for development and
-> testing purposes. See deployment for notes on how to deploy the project on a live system.
->
+## Getting Started
+
+For now this project is in early development stage. If you want to try it, please be my guest and clone/fork it.
+If you want to be part of it, please [email me](mailto:matciolkosz@gmail.com).
+
 > ### Prerequisites
 >
 > What things you need to install the software and how to install them
@@ -58,7 +58,7 @@ This is app/toolkit for parsing and analyzing data acquired by 'Car Scanner' and
 >
 > ## Deployment
 >
-> Add additional notes about how to deploy this on a live system
+> Add additional notes about how to deploy this on a live system.
 >
 > ## Built With
 >
@@ -76,13 +76,13 @@ This is app/toolkit for parsing and analyzing data acquired by 'Car Scanner' and
 
 ## Authors
 
-- **Mateusz Ciołkosz** — Author and maintainer — [gocarter](https://github.com/gocarter).
+- [**Mateusz Cio?kosz**](https://github.com/gocarter) an author and maintainer.
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License � see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
