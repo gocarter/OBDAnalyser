@@ -44,9 +44,3 @@ def import_raw_car_scanner_csv(file: Path) -> ObdRawSession:
                 parameter.addValue(second, value)
 
         return response
-
-# TODO Add simple cli interface, if enyone would wont to use this module in terminal.
-
-
-if __name__ == "__main__":
-    pass
