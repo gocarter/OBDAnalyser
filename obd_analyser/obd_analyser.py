@@ -3,4 +3,5 @@
 import click
 
 
-@
+@click.group()
+@click.option()
