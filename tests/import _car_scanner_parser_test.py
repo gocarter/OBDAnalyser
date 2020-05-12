@@ -35,4 +35,4 @@ def test_import():
 
     resp = import_raw_car_scanner_csv(f)
     size = getsize(resp)
-    print(resp)
+    # print(resp)

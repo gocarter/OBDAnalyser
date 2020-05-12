@@ -4,13 +4,13 @@ import os
 from pathlib import Path
 from csv import reader
 from datetime import datetime
-from obd_analyser.data_structures import *
+from obd_analyser.data_structures import ObdParameters, ObdValues, ObdSessions
 
 
-def import_raw_car_scanner_csv(file: Path) -> ObdRawSession:
+def import_raw_car_scanner_csv(file: Path) -> ObdSession:
     with open(file) as raw_file:
         first = True
-        response = ObdRawSession()
+        response = ObdSession()
         for row in reader(raw_file, delimiter=";", quotechar='"', strict=True):
             if first:
                 first = False
@@ -32,12 +32,9 @@ def import_raw_car_scanner_csv(file: Path) -> ObdRawSession:
             else:
                 second, pid_name, value, units = [
                     float(row[0]), str(row[1]), str(row[2]), str(row[3])]
-                try:
-                    value = float(value)
-                except Exception:
-                    pass
+
                 if not [parameter for parameter in response.parameters if pid_name == parameter.PID_NAME]:
-                    param = ObdRawParameter(pid_name, units, type(value))
+                    param = ObdParameter(UNIT=units, PID_NAME=pid_name)
                     response.parameters.append(param)
                 [parameter] = [
                     param for param in response.parameters if pid_name == param.PID_NAME]
