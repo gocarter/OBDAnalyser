@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import logging
 from pathlib import Path
 from csv import reader
 from datetime import datetime
@@ -35,7 +36,7 @@ def import_raw_car_scanner_csv(file: Path) -> ObdRawSession:
                 try:
                     value = float(value)
                 except Exception:
-                    pass
+                    logging.info("Parameter not float but: {}".format(type(value)))
                 if not [parameter for parameter in response.parameters if pid_name == parameter.PID_NAME]:
                     param = ObdRawParameter(pid_name, units, type(value))
                     response.parameters.append(param)
